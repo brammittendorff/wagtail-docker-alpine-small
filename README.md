@@ -10,11 +10,17 @@ After that you can run a clean installation with the following command:
 
 ```bash rerun.sh```
 
-## Running again
+## Running wagtail
 
-You can exit the application and run it again by typing:
+You can run wagtail again by typing:
 
 ```docker-compose up wagtail```
+
+## Stopping wagtail
+
+You can stop wagtail by typing:
+
+```docker-compose stop wagtail```
 
 ## Locate it in your browser
 
