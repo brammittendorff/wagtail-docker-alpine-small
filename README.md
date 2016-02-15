@@ -12,23 +12,11 @@ After that you can run a clean installation with the following command:
 
 ## Creating a super user
 
-Make sure wagtail is running. After that bash into your wagtail container. First you need to know the container id:
+First you need to bash into you container:
 
-```docker ps```
+```docker-compose run wagtail bash```
 
-You will see something like this:
-```
-CONTAINER ID        IMAGE                            COMMAND             CREATED             STATUS              PORTS                    NAMES
-bbaee78b9e7b        wagtaildockerbasesmall_wagtail   "bash run.sh"       4 minutes ago      Up 4 minutes       0.0.0.0:8000->8000/tcp   wagtaildockerbasesmall_wagtail_1
-```
-
-Your container id is: `bbaee78b9e7b`
-
-To bash into your container use the following command:
-
-```sudo docker exec -i -t bbaee78b9e7b bash```
-
-And after that you can create your superuser with:
+Navigate to your website folder. Default this will be 'mywebsite'. And after that you can create your superuser with:
 
 ```python manage.py createsuperuser```
 
