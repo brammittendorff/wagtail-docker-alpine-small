@@ -4,7 +4,7 @@
 
 First you will need to create a 'default' virtual machine for docker:
 
-```docker-machine create default --driver virtualbox --virtualbox-disk-size 16000```
+```docker-machine create default --driver virtualbox```
 
 After that you can run a clean installation with the following command:
 
