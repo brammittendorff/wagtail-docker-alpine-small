@@ -16,7 +16,7 @@ You can exit the application and run it again by typing:
 
 ```docker-compose up wagtail```
 
-## Locate it in you browser
+## Locate it in your browser
 
 You will need to find the ip of your docker machine. You can do this by running the following command:
 
