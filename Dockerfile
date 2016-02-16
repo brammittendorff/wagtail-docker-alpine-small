@@ -1,5 +1,5 @@
 FROM gliderlabs/alpine:latest
-MAINTAINER Bram Mittendorff
+MAINTAINER Bram Mittendorff <botw44@gmail.com>
 
 RUN apk add --update \
     bash \
