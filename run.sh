@@ -1,8 +1,6 @@
 PROJECT_NAME="$1"
 
 if [ "$PROJECT_NAME" ]; then
-  echo "$PROJECT_NAME/*" >> .gitignore
-
   if [ ! -d "$PROJECT_NAME" ]; then
     wagtail start $PROJECT_NAME
   fi
