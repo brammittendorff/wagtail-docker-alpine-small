@@ -18,7 +18,7 @@ First you need to bash into you container:
 
 Navigate to your website folder. Default this will be 'mywebsite'. And after that you can create your superuser with:
 
-```python manage.py createsuperuser```
+```cd mywebsite && python manage.py createsuperuser```
 
 
 ## Running wagtail
