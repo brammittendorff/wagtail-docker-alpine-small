@@ -2,13 +2,17 @@
 
 ## Installation
 
+# Only for Mac devices
+
 First you will need to create a 'default' virtual machine for docker:
 
 ```docker-machine create default --driver virtualbox```
 
+# For both Mac & Linux devices
+
 After that you can run a clean installation with the following command:
 
-```bash rerun.sh```
+```bash run.sh```
 
 ## Creating a super user
 
@@ -37,19 +41,13 @@ You can stop wagtail by typing:
 
 You will need to find the ip of your docker machine. You can do this by running the following command:
 
-```docker-machine ls```
+```docker ps```
 
-You will see something like this:
+Choose your container id and use docker inspect:
 
-* tcp://192.168.99.100:2376
+```docker inspect <CONTAINER_ID> | grep IPAddress```
 
-Then you know your docker machine ip is:
-
-* 192.168.99.100
-
-Wagtail is binded to port:
-
-* 8000
+Then you know your docker machine ip and Wagtail is binded to port 8000.
 
 So you can navigate your browser to:
 

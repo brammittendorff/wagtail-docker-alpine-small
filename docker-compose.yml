@@ -1,6 +1,6 @@
 wagtail:
   build: .
-  command: 'bash run.sh mywebsite'
+  command: 'bash build.sh mywebsite'
   volumes:
     - '.:/app'
   working_dir: /app
