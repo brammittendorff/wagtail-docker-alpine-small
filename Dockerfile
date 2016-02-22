@@ -6,6 +6,7 @@ RUN apk add --update \
     zlib \
     curl \
     jpeg \
+    jpeg-dev \
     libpng \
     tiff \
     python \
